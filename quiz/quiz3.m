@@ -22,10 +22,10 @@ plot(x, w);
 % set y2 as the result of f applied to x and 9
 y2 = f(x, 9);
 % plot x and y2
-plot(x, y2)
+plot(x, y2);
 % set t as the result of do_array_3 applied to 1.1,0.9,20
 t = do_array_3(1.1, 0.9, 20);
 % multiply t by y2 and set to v
 v = t .* y2;
 % plot x and v
-plot(x, v)
+plot(x, v);
