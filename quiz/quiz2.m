@@ -8,24 +8,24 @@ f = @(u, a) sqrt(u .^ 2 + a .^ 2);
 y = f(x, 10);
 % plot x and y and allow additional plots to be added
 hold on
-plot(x, y)
+plot(x, y);
 % set z as the result of do_array_2 applied to y
 z = do_array_2(y);
 % plot x and z
-plot(x, z)
+plot(x, z);
 % set d as the result of f applied to x and 5
-d = f(x, 5)
+d = f(x, 5);
 % set c as a 41 element array of NaN
 c = nan(1, 41);
 % set the first 21 elements of c to 21
-c(1:21) = 21
+c(1:21) = 21;
 % set the last 20 elements of c to 41
-c(22:end) = 41
+c(22:end) = 41;
 % set t as the sum of c and d
-t = c + d
+t = c + d;
 % plot x and t
 plot(x, t)
 % set w as the result of do_array_2 applied to t
-w = do_array_2(t)
+w = do_array_2(t);
 % plot x and w
 plot(x, w)
