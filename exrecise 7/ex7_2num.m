@@ -1,5 +1,5 @@
 function title_val = ex7_2num(T, value, r)
-    equal = '=';
+    equal = ' = ';
     value_str = num2str(value);
     open_bracket = ' [';
     vals_str = num2str(r);
