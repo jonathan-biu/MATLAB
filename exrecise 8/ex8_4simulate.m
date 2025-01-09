@@ -4,7 +4,7 @@ function [N_sim] = ex8_4simulate (n0, K, lambda)
     % set Generations var
     Generations = 10;
     N_sim = nan((Generations +1), length(n0));
-    N_sim(1, :) = d6random_round(n0);
+    N_sim(1, :) = n0;
     N_sim(2, :) = d6random_round(next_step(N_sim(1, :), K, lambda));
     N_sim(3, :) = d6random_round(next_step(N_sim(2, :), K, lambda));
     N_sim(4, :) = d6random_round(next_step(N_sim(3, :), K, lambda));

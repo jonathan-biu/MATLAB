@@ -14,6 +14,6 @@ hold on
 plot(trans_scaled_births, Marker = '.', LineStyle = '--');
 % calc mean and std of the scaled data across columns
 mean_births = mean(scaled_births, 1);
-std_births = std(scaled_births, 1);
+std_births = std(scaled_births, 0, 1);
 errorbar(mean_births, std_births, 'k');
 hold off
