@@ -20,3 +20,15 @@ toShow = ex5_2mat(birth_data);
 month_nums = [month_nums, month_nums(end) + 1];
 % add years(end)+1 to years
 years = [years; years(end) + 1];
+% plot toShow as colormap given month_nums and years as x and y using pcolor
+pcolor(month_nums, years, toShow);
+% set axis titles
+xlabel("month");
+ylabel(yearHeader);
+colorbar;
+% create a 12 long vecfrom 1.5 w/skips of 1
+xLocations = 1.5:1:(1.5 + 12);
+% set xticks as xLocations
+xticks(xLocations)
+% set xtickslables as monthNames
+xticklabels(monthNames)
