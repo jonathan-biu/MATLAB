@@ -28,4 +28,4 @@ S2 = struct('lx', average_lx, 'lxName', turtles_cell{1, 4}, 'mx', turtlesData(1,
 % save S3 as struct w/ fields best_lx, lxName, mx, mxName
 S3 = struct('lx', best_lx, 'lxName', turtles_cell{1, 6}, 'mx', turtlesData(1, 7), 'mxName', turtles_cell{1, 7});
 % save S1, S2, and S3  as turtles_struct
-turtles_struct = [S1, S2, S3];
+turtleStruct = [S1, S2, S3];
