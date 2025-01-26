@@ -8,7 +8,7 @@ unscaled_births = births(:, 2:end);
 % scale using ex8_1scale function across rows (2)
 scaled_births = ex8_1scale(unscaled_births, 2);
 % transpose the scaled data
-trans_scaled_births = scaled_births';
+trans_scaled_births = scaled_births.';
 % plot transposed data
 hold on
 plot(trans_scaled_births, Marker = '.', LineStyle = '--');

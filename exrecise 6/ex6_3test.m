@@ -29,3 +29,4 @@ plot(line_x1, line_y1, 'g-');
 line_x2 = [x(index_ynoise2), x(end)];
 line_y2 = [ynoise_const2, ynoise_const2];
 plot(line_x2, line_y2, 'k-');
+hold off
